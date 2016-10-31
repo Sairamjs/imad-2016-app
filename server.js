@@ -10,8 +10,8 @@ var articleOne = {
     title: Article One| Sairam CNVVH',
     heading : 'article-one',
     date : 'Oct 31,2016',
-    content:'
-                 <p>
+    content:    
+                ' <p>
                     This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
                 </p>
                 <p>
@@ -19,7 +19,8 @@ var articleOne = {
                 </p>
                 <p>
                     This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.
-                </p>'
+                </p> 
+                '
 };
 
 function createTemplate(data) {
@@ -28,7 +29,7 @@ function createTemplate(data) {
     var date=data.date;
     var content=data.content;
     
-    var htmlTemplate = '
+    var htmlTemplate = `
         <html>
         <head>
             <title>${title}</title>
@@ -52,6 +53,7 @@ function createTemplate(data) {
             </div>
         </body>
     </html>
+    `;
 
 return createTemplate;
 }
